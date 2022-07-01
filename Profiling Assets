@@ -1,0 +1,39 @@
+Profiling Assets
+
+6 Classes
+                        Train + Test
+1. Miner Assets     = 333 + 129 = 462 
+2. Nominer Assets   = 933 + 273 = 1206
+3. Phoma Assets     = 389 + 97  = 486
+4. Nophoma Assets   = 877 + 305 = 1182
+5. Rust Assets      = 309 + 73  = 382
+6. Norust Assets    = 957 + 329 = 1286
+
+Calc. Portion
+Total Images each Classes (TIC)
+    ->Train = 80%
+                -> S.Train = 80% * Train
+                -> S.Validation = 20% * Train
+    ->Test = 20%
+            => S.Test = 20% * TIC
+
+[Formula]
+S.Train         = 0.8 * 0.8 * TIC
+S.Validation    = 0.2 * 0.8 *TIC
+S.Test          = 0.2 * TIC
+
+
+Split into 3 Storage (S.)
+Classes             Total Assets        S.Train     S.Validation        S.Test
+Miner               461                 296         74                  91                          
+Nominer             1.205               772         193                 240
+Phoma               485                 311         78                  96
+Nophoma             1.181               756         189                 236
+Rust                381                 244         61                  76
+Norust              1.285               823         206                 256
+
+
+
+
+
+
